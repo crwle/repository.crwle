@@ -1,0 +1,17 @@
+<addon id="script.kcleaner" name="KCleaner" provider-name="Dalibor Lanik" version="3.31"> 
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" /> 
+  </requires>
+  <extension library="default.py" point="xbmc.python.pluginsource">
+        <provides>executable</provides>
+  </extension>
+  <extension library="service.py" point="xbmc.service" start="startup"> 
+        <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata"> 
+    <platform>all</platform>
+    <assets>
+        <icon>icon.png</icon>
+    </assets>
+  </extension>
+</addon>
